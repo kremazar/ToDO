@@ -1,0 +1,3 @@
+root = true
+[*.{yml,yaml}]
+indent_size = 2
