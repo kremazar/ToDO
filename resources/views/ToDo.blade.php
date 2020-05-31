@@ -86,6 +86,10 @@
         </tbody>
       </table>
   </div>
+  
+</div>
+<div class="row text-center">
+  {{ $todo->links() }}
 </div>
 </body>
 </html>

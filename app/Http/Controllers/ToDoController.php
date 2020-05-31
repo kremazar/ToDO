@@ -7,7 +7,7 @@ use App\ToDo;
 class ToDoController extends Controller
 {
     public function index(){
-        $todo=ToDo::all();
+        $todo=ToDo::orderBy('id','asc')->paginate(5);
         return view('ToDo')->with(['todo'=>$todo]);
     }
     public function store(Request $request){
